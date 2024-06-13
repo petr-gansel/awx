@@ -56,9 +56,9 @@ RUN pip3.11 install -vv build
 
 {% if image_architecture == 'ppc64le'  %}
     RUN dnf -y update && dnf install -y wget && \
-    wget https://static.rust-lang.org/dist/rust-1.41.0-powerpc64le-unknown-linux-gnu.tar.gz && \
-    tar -zxvf rust-1.41.0-powerpc64le-unknown-linux-gnu.tar.gz && \
-    cd rust-1.41.0-powerpc64le-unknown-linux-gnu && \
+    wget https://static.rust-lang.org/dist/rust-1.78.0-powerpc64le-unknown-linux-gnu.tar.gz && \
+    tar -zxvf rust-1.78.0-powerpc64le-unknown-linux-gnu.tar.gz && \
+    cd rust-1.78.0-powerpc64le-unknown-linux-gnu && \
     sh install.sh ;
 {% endif %}
 
